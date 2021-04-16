@@ -31,19 +31,32 @@ class MyTheme with ChangeNotifier {
     switch (themeType) {
       case ThemeType.Light:
         return ThemeData(
-            textTheme: TextTheme(
-              headline3: TextStyle(color: Color(0xfffed8b5)),
-              subtitle1: TextStyle(color: Color(0xfffed8b5)),
-              bodyText1: TextStyle(color: Color(0xfffed8b5)),
-            ),
-            scaffoldBackgroundColor: Color(0xff5b7fa9),
-            appBarTheme: AppBarTheme(
-              color: Color(0xffa2a5d5),
-              elevation: 0.0,
-            ),
-            accentColor: Colors.yellow);
+          textTheme: TextTheme(
+            headline3: TextStyle(color: Color(0xfffed8b5)),
+            subtitle1: TextStyle(color: Color(0xfffed8b5)),
+            bodyText1: TextStyle(color: Color(0xfffed8b5)),
+          ),
+          scaffoldBackgroundColor: Color(0xff5b7fa9),
+          appBarTheme: AppBarTheme(
+            color: Color(0xffa2a5d5),
+            elevation: 0.0,
+          ),
+          accentColor: Colors.yellow,
+        );
       case ThemeType.Dark:
-        return ThemeData();
+        return ThemeData(
+          textTheme: TextTheme(
+            headline3: TextStyle(color: Color(0xff080208)),
+            subtitle1: TextStyle(color: Color(0xff080208)),
+            bodyText1: TextStyle(color: Color(0xff080208)),
+          ),
+          scaffoldBackgroundColor: Color(0xff281d36),
+          appBarTheme: AppBarTheme(
+            color: Color(0xff443781),
+            elevation: 0.0,
+          ),
+          accentColor: Colors.grey.shade400,
+        );
       case ThemeType.Other:
         return ThemeData();
     }

@@ -29,9 +29,9 @@ class CustomWidgetThemes {
         break;
       case ThemeType.Dark:
         sceneryThemeData = SceneryThemeData(
-          skyFillColor: Colors.grey,
-          mountainFillColor: Colors.blueGrey,
-          waterFillColor: Colors.blueGrey[800]!,
+          skyFillColor: Color(0xff443781),
+          mountainFillColor: Color(0xff191633),
+          waterFillColor: Color(0xff281d36),
           drawMoon: true,
           drawSun: false,
         );
