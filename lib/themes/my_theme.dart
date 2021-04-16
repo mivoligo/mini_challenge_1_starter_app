@@ -20,6 +20,7 @@ class MyTheme with ChangeNotifier {
       }
     };
   }
+
   void setThemeType(ThemeType themeType) {
     _themeType = themeType;
     notifyListeners();
@@ -29,7 +30,18 @@ class MyTheme with ChangeNotifier {
   ThemeData get currentThemeData {
     switch (themeType) {
       case ThemeType.Light:
-        return ThemeData();
+        return ThemeData(
+            textTheme: TextTheme(
+              headline3: TextStyle(color: Color(0xfffed8b5)),
+              subtitle1: TextStyle(color: Color(0xfffed8b5)),
+              bodyText1: TextStyle(color: Color(0xfffed8b5)),
+            ),
+            scaffoldBackgroundColor: Color(0xff5b7fa9),
+            appBarTheme: AppBarTheme(
+              color: Color(0xffa2a5d5),
+              elevation: 0.0,
+            ),
+            accentColor: Colors.yellow);
       case ThemeType.Dark:
         return ThemeData();
       case ThemeType.Other:
