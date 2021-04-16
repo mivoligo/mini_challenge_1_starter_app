@@ -58,7 +58,19 @@ class MyTheme with ChangeNotifier {
           accentColor: Colors.grey.shade400,
         );
       case ThemeType.Other:
-        return ThemeData();
+        return ThemeData(
+          textTheme: TextTheme(
+            headline3: TextStyle(color: Color(0xff3b6c6d)),
+            subtitle1: TextStyle(color: Color(0xff3b6c6d)),
+            bodyText1: TextStyle(color: Color(0xff3b6c6d)),
+          ),
+          scaffoldBackgroundColor: Color(0xff091918),
+          appBarTheme: AppBarTheme(
+            color: Color(0xff2f7784),
+            elevation: 0.0,
+          ),
+          accentColor: Colors.grey.shade400,
+        );
     }
   }
 }
