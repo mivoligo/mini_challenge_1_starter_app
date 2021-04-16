@@ -42,7 +42,8 @@ class MyTheme with ChangeNotifier {
             elevation: 0.0,
             textTheme: TextTheme(
               headline6: TextStyle(
-                fontSize: 20,
+                fontSize: 22,
+                fontStyle: FontStyle.italic,
                 color: Colors.yellow,
               ),
             ),
@@ -52,17 +53,18 @@ class MyTheme with ChangeNotifier {
       case ThemeType.Dark:
         return ThemeData(
           textTheme: TextTheme(
-            headline3: TextStyle(color: Color(0xff080208)),
+            headline3: TextStyle(color: Color(0xff080208), letterSpacing: 2.0),
             subtitle1: TextStyle(color: Color(0xff080208)),
             bodyText1: TextStyle(color: Color(0xff080208)),
           ),
           scaffoldBackgroundColor: Color(0xff281d36),
           appBarTheme: AppBarTheme(
             color: Color(0xff443781),
+            centerTitle: true,
             elevation: 0.0,
             textTheme: TextTheme(
               headline6: TextStyle(
-                fontSize: 24,
+                fontSize: 20,
                 color: Color(0xff191633),
               ),
             ),
@@ -79,9 +81,15 @@ class MyTheme with ChangeNotifier {
           scaffoldBackgroundColor: Color(0xff091918),
           appBarTheme: AppBarTheme(
             color: Color(0xff2f7784),
+            centerTitle: true,
             elevation: 0.0,
             textTheme: TextTheme(
               headline6: TextStyle(
+                decoration: TextDecoration.combine([
+                  TextDecoration.overline,
+                  TextDecoration.underline,
+                ]),
+                decorationStyle: TextDecorationStyle.wavy,
                 fontSize: 24,
                 color: Color(0xff091918),
               ),
