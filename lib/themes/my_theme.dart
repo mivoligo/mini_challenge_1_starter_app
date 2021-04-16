@@ -40,6 +40,12 @@ class MyTheme with ChangeNotifier {
           appBarTheme: AppBarTheme(
             color: Color(0xffa2a5d5),
             elevation: 0.0,
+            textTheme: TextTheme(
+              headline6: TextStyle(
+                fontSize: 20,
+                color: Colors.yellow,
+              ),
+            ),
           ),
           accentColor: Colors.yellow,
         );
@@ -54,6 +60,12 @@ class MyTheme with ChangeNotifier {
           appBarTheme: AppBarTheme(
             color: Color(0xff443781),
             elevation: 0.0,
+            textTheme: TextTheme(
+              headline6: TextStyle(
+                fontSize: 24,
+                color: Color(0xff191633),
+              ),
+            ),
           ),
           accentColor: Colors.grey.shade400,
         );
@@ -68,6 +80,12 @@ class MyTheme with ChangeNotifier {
           appBarTheme: AppBarTheme(
             color: Color(0xff2f7784),
             elevation: 0.0,
+            textTheme: TextTheme(
+              headline6: TextStyle(
+                fontSize: 24,
+                color: Color(0xff091918),
+              ),
+            ),
           ),
           accentColor: Colors.grey.shade400,
         );
